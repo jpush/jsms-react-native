@@ -24,7 +24,7 @@
 #endif
 
 @implementation RCTJSMSModule
-RCT_EXPORT_MODULE();
+RCT_EXPORT_MODULE(@"JSMSModule");
 @synthesize bridge = _bridge;
 
 + (id)allocWithZone:(NSZone *)zone {

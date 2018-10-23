@@ -1,38 +1,29 @@
 import { 
-    DeviceEventEmitter, 
-    NativeModules,
-    Platform
+    NativeModules
    } from 'react-native'
 
 const JSMSModule = NativeModules.JSMSModule
 
-
-    /**
-     * 获取当前连接状态
-     * @param {Fucntion} cb = (Boolean) => {}
-     * 如果连接状态变更为已连接返回 true
-     * 如果连接状态变更为断开连接连接返回 false
-     */
 export default class JSMS {
     /**
      * 初始化 JSMS 插件
      * @param {string} appKey 
      */
     static init(appKey) {
-        JPush.setup(appKey)
+        JSMSModule.setup(appKey)
       }
 
     /**
      * 获取验证码
      * @param {Object} params = { 
      *  number: string, // 电话号码
-     *  templateID: string // 短信模板 ID
+     *  templateId: string // 短信模板 ID
      * }
      * @param {Function} success = (result) => {}
      * @param {Function} fail = (error) => {}
      */
     static getVerificationCode(params, success, fail) {
-        JPush.getVerificationCode(params, success, fail);
+        JSMSModule.getVerificationCode(params, success, fail);
     }
 
     /**
@@ -45,7 +36,7 @@ export default class JSMS {
      * @param {Function} fail = (error) => {}
      */
     static getVoiceVerificationCode(params, success, fail) {
-        JPush.getVoiceVerificationCode(params, success, fail);
+        JSMSModule.getVoiceVerificationCode(params, success, fail);
     }
 
     /**
@@ -58,7 +49,7 @@ export default class JSMS {
      * @param {Function} fail = (error) => {}
      */
     static checkVerificationCode(params, success, fail) {
-        JPush.checkVerificationCode(params, success, fail);
+        JSMSModule.checkVerificationCode(params, success, fail);
     }
 
     /**
@@ -66,6 +57,6 @@ export default class JSMS {
      * @param {number} seconds 
      */
     static setMinimumTimeInterval(seconds) {
-        JPush.setMinimumTimeInterval(seconds);
+        JSMSModule.setMinimumTimeInterval(seconds);
     }
 }
