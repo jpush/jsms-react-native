@@ -16,6 +16,6 @@
 #import "React/RCTBridgeModule.h"
 #endif
 
-@interface RCTJSMSModule : NSObject
+@interface RCTJSMSModule : NSObject<RCTBridgeModule>
 
 @end
