@@ -30,7 +30,7 @@ export default class JSMS {
      * 获取语言验证码
      * @param {Object} params = {
      *  number: string,  // 电话号码
-     *  options: 'zh' | 'en' // 语言选项 'zh' 为中文，'en' 为英文，默认为 'zh'。
+     *  language: 'zh' | 'en' // 语言选项 'zh' 为中文，'en' 为英文，默认为 'zh'。
      * }
      * @param {Function} success = (result) => {}
      * @param {Function} fail = (error) => {}

@@ -24,7 +24,7 @@
 #endif
 
 @implementation RCTJSMSModule
-RCT_EXPORT_MODULE(@"JSMSModule");
+RCT_EXPORT_MODULE();
 @synthesize bridge = _bridge;
 
 + (id)allocWithZone:(NSZone *)zone {
@@ -70,15 +70,15 @@ RCT_EXPORT_METHOD(getVerificationCode: (NSDictionary *)params
 RCT_EXPORT_METHOD(getVoiceVerificationCode: (NSDictionary *)params
                   success: (RCTResponseSenderBlock)successCallback
                   fail: (RCTResponseSenderBlock)failCallback) {
-  JSMSLanguageOptions options;
+  JSMSLanguageOptions language;
   if ([params[@"number"] isEqualToString:@"en"]) {
-    options = JSMSLanguage_en;
+    language = JSMSLanguage_en;
   } else {
-    options = JSMSLanguage_zh_Hans;
+    language = JSMSLanguage_zh_Hans;
   }
   
   [JSMSSDK getVoiceVerificationCodeWithPhoneNumber: params[@"number"]
-                                   languageOptions: options
+                                   languageOptions: language
                                  completionHandler:^(id  _Nullable resultObject, NSError * _Nullable error) {
                                    if (error) {
                                      failCallback(@[[self errorToDic: error]]);
@@ -103,7 +103,7 @@ RCT_EXPORT_METHOD(checkVerificationCode: (NSDictionary *)params
                }];
 }
 
-RCT_EXPORT_METHOD(setMinimumTimeInterval: (NSNumber *)interval) {
+RCT_EXPORT_METHOD(setMinimumTimeInterval: (nonnull NSNumber *)interval) {
   [JSMSSDK setMinimumTimeInterval: interval.doubleValue];
 }
 @end
