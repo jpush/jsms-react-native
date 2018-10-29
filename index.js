@@ -27,7 +27,7 @@ export default class JSMS {
     }
 
     /**
-     * 获取语言验证码
+     * 获取语音验证码
      * @param {Object} params = {
      *  number: string,  // 电话号码
      *  language: 'zh' | 'en' // 语言选项 'zh' 为中文，'en' 为英文，默认为 'zh'。
@@ -41,7 +41,7 @@ export default class JSMS {
 
     /**
      * 检查验证码是否正确。
-     * @param {*} params = {
+     * @param {Object} params = {
      *  number: string, // 电话号码
      *  code: string, // 要检查的验证码
      * }
