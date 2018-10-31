@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableHighlight, ScrollView, TextInput  } from 'react-native';
+import { StyleSheet, Text, View, TouchableHighlight, ScrollView, TextInput, Alert  } from 'react-native';
 import JSMS from 'jsms-react-native'
 
 var styles = StyleSheet.create({
@@ -71,18 +71,27 @@ export default class App extends React.Component {
         <Button title="init" 
           onPress={() => JSMS.init('a1703c14b186a68a66ef86c1')}/>
         <Button title="getVerificationCode" 
-        onPress={() => JSMS.getVerificationCode({number: this.state.number, templateId: ''}, () => {}, 
+        onPress={() => JSMS.getVerificationCode({number: this.state.number, templateId: ''}, () => {
+          console.log(`getVerificationCode success`)
+        }, 
           (error) => {
-
+            console.log(`getVerificationCode ${error}`)
           })}/>
         <Button title="getVoiceVerificationCode" 
-        onPress={() => JSMS.getVoiceVerificationCode({number: this.state.number, language: 'zh'}, () => {}, 
+        onPress={() => JSMS.getVoiceVerificationCode({number: this.state.number, language: 'zh'}, () => {
+          console.log(`getVoiceVerificationCode success`)
+        }, 
           (error) => {
-
+            console.log(`getVoiceVerificationCode ${error}`)
           })}/>
         <Button title="检查验证码是否正确" 
-        onPress={() => JSMS.checkVerificationCode({number: this.state.number, code: this.state.code}, () => {}, 
+        onPress={() => JSMS.checkVerificationCode({number: this.state.number, code: this.state.code}, () => {
+          // console.log(`checkVerificationCode success`)
+          Alert.alert('checkVerificationCode','success')
+        }, 
           (error) => {
+            // console.log(`checkVerificationCode ${error}`)
+            Alert.alert('checkVerificationCode','error')
           })}/>
         <Button title="置获取验证码的时间间隔" 
         onPress={() => JSMS.setMinimumTimeInterval(60)}/>

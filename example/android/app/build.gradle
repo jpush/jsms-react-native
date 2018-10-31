@@ -94,18 +94,23 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.example"
-        minSdkVersion 16
-        targetSdkVersion 22
+        applicationId "com.example.jsms"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
+
+        manifestPlaceholders = [
+                JPUSH_APPKEY: "a1703c14b186a68a66ef86c1", //在此替换你的APPKey
+                APP_CHANNEL: "developer-default"    //应用渠道号
+        ]
     }
     splits {
         abi {
@@ -137,9 +142,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:23.0.1"
-    compile "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(":jsms-react-native")
+
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.facebook.react:react-native:+"  // From node_modules
 }
 
 // Run this once to be able to run the application with BUCK

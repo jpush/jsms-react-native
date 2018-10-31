@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:1-11:12
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:3:5-66
+	android:name
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:4:5-74
+	android:name
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:4:22-72
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:5:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:8:5-10:19
+meta-data#JPUSH_APPKEY
+ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:9:9-81
+	android:value
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:9:48-79
+	android:name
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml:9:20-47
+uses-sdk
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		ADDED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/HuminiOS/Desktop/workproject/jsms-react-native/example/node_modules/jsms-react-native/android/src/main/AndroidManifest.xml

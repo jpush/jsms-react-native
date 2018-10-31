@@ -1,3 +1,6 @@
 rootProject.name = 'example'
+//include ':jsms-react-native'
+//project(':jsms-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jsms-react-native/android')
 
-include ':app'
+include ':app', 'jsms-react-native'
+project(':jsms-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jsms-react-native/android')
