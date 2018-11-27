@@ -1,4 +1,4 @@
-# jmessage-react-plugin
+# jsms-react-native
 
 极光官方开发的[极光短信](https://docs.jiguang.cn/jsms/client/iOS/ios_api/) react-native 插件。
 
