@@ -1,6 +1,6 @@
 {
   "name": "jsms-react-native",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a jsms plugin for react native application",
   "main": "index.js",
   "directories": {
