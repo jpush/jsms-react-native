@@ -36,6 +36,15 @@ RCT_EXPORT_MODULE();
   return sharedInstance;
 }
 
++ (BOOL)requiresMainQueueSetup {
+  return YES;
+}
+
+- (dispatch_queue_t)methodQueue
+{
+  return dispatch_get_main_queue();
+}
+
 - (id)init {
   self = [super init];
   return self;
@@ -46,7 +55,22 @@ RCT_EXPORT_MODULE();
 }
 
 RCT_EXPORT_METHOD(setup: (NSString *)appKey) {
-  [JSMSSDK registerWithAppKey: appKey];
+  if (appKey != nil && ![appKey isEqualToString:@""]) {
+    [JSMSSDK registerWithAppKey: appKey];
+  } else {
+    // 如果 appKey 为空，会尝试在 JiGuangConfig.plist 文件中查找这个 appKey。
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"JiGuangConfig" ofType:@"plist"];
+    
+    if (!plistPath) {
+      NSLog(@"error: JiGuangConfig.plist not found");
+      return;
+    }
+    
+    NSMutableDictionary *fileConfig = [[NSMutableDictionary alloc] initWithContentsOfFile: plistPath];
+    if (fileConfig[@"appKey"]) {
+      [JSMSSDK registerWithAppKey: fileConfig[@"appKey"]];
+    }
+  }
 }
 
 

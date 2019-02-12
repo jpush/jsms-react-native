@@ -16,7 +16,8 @@ Android 和 iOS 通用 API。
 
 ##### 参数说明
 
-- {String} appKey: 极光官网注册的应用 appkey。
+- {String} appKey?: 极光官网注册的应用 appkey。
+  - 如果 appKey 为 undefined 或者 “” ，iOS 会在 [JiGuangConfig.plist](../JiGuangConfig.plist) 中获取该字段，开发者需要将  [JiGuangConfig.plist](../JiGuangConfig.plist)  文件复制到自己的 XCode 工程中，并且替换自己的 AppKey，
 
 ##### 示例
 
